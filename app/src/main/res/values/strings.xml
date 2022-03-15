@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="checkBox">com.example.myapplication.checkBox</string>
+    <string name="name">com.example.myapplication.name</string>
+    <string name="password">com.example.myapplication.password</string>
+    <string name="email">com.example.myapplication.email</string>
+    <string name="phone">com.example.myapplication.phone</string>
+    <string name="address">com.example.myapplication.address</string>
+    <string name="score">com.example.myapplication.score</string>
+    <string name="loginStatus">com.example.myapplication.loginStatus</string>
+    <string name="darkMode">com.example.myapplication.darkMode</string>
+</resources>

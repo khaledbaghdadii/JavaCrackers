@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lesson" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleIntro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="#131313"
+                android:text="Hello Java!!!!"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textColor="@color/purple_700" />
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="392dp"
+                android:layout_height="361dp"
+                app:srcCompat="@drawable/prison" />
+
+            <TextView
+                android:id="@+id/qstn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tell us, what language do you speak?" />
+
+            <CheckBox
+                android:id="@+id/checkBoxEng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:text="English" />
+
+            <CheckBox
+                android:id="@+id/checkBoxArabic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:text="Arabic" />
+
+            <CheckBox
+                android:id="@+id/checkBoxFrench"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:text="French" />
+
+            <TextView
+                android:id="@+id/languages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Just as you speak english, we speak java!" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

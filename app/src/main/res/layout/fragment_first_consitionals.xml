@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="636dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            >
+
+            <TextView
+                android:id="@+id/titleIntro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:shadowColor="#131313"
+                android:text="Conditional Statements"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/purple_700" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="17dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Java supports the usual logical conditions from mathematics:"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="6"
+                android:text="•Less than: a&lt;b\n•Less than or equal to: a \&lt;= b\n•Greater than: a &gt; b\n•Greater than or equal to: a &gt;= b\n•Equal to a == b\n•Not Equal to: a != b " />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Java has the following conditional statements:"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="381dp"
+                android:layout_height="97dp"
+                android:lines="@integer/material_motion_duration_long_1"
+                android:text="•Use if to specify a block of code to be executed, if a specified condition is true\n•Use else to specify a block of code to be executed, if the same condition is false
+" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="31dp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If Statement"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Use the if statement to specify a block of Java code to be executed if a condition is true." />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="328dp"
+                android:layout_height="58dp"
+                app:srcCompat="@drawable/if_statement" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Else Statement"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Use the else statement to specify a block of code to be executed if the condition is false." />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="328dp"
+                android:layout_height="90dp"
+                app:srcCompat="@drawable/else_statement" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Example"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="334dp"
+                android:layout_height="137dp"
+                app:srcCompat="@drawable/if_statemen_examplet" />
+            <Button
+                android:id="@+id/runBtnConditionals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Run" />
+            <TextView
+                android:id="@+id/exampleConditionalTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

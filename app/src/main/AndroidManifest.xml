@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:name=".Database"
+        android:allowBackup="true"
+        android:icon="@drawable/logo2"
+        android:label="Java Crackers"
+        android:roundIcon="@drawable/logo2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".HomeActivity"
+            android:exported="true">
+        </activity>
+        <activity android:name=".IntroActivity"
+            android:exported="true">
+        </activity>
+        <activity android:name=".LoopActivity"
+            android:exported="true">
+        </activity>
+        <activity android:name=".DataTypesActivity"
+            android:exported="true">
+        </activity>
+        <activity android:name=".ConditionalActivity"
+            android:exported="true">
+        </activity>
+        <activity android:name=".ProfileActivity"
+            android:exported="true">
+        </activity>
+        <activity android:name=".SettingsActivity"
+            android:exported="true">
+        </activity>
+        <activity android:name=".ScoreActivity"
+            android:exported="true">
+        </activity>
+        <activity android:name=".SignupActivity"
+            android:exported="true">
+        </activity>
+        <activity android:name=".AboutActivity"
+            android:exported="true">
+        </activity>
+        <activity android:name=".EditProfile"
+            android:exported="true">
+        </activity>
+        <activity android:name=".LeaderBoard"
+            android:exported="true">
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+</manifest>
